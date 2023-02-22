@@ -2,6 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 part 'student_model.g.dart';
 @JsonSerializable()
 class Student{
+  @JsonKey(includeToJson: false)
   final int? id;
   final String name;
   final int age;
